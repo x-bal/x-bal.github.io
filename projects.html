@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - M. Iqbal Ilham Rahayu</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/projects.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap">
+</head>
+<body>
+    <div class="sparkles-container">
+        <div class="sparkle-group"></div>
+    </div>
+
+    <div class="projects-container">
+        <header class="projects-header">
+            <a href="index.html" class="back-button">
+                <i class="fas fa-arrow-left"></i> Back
+            </a>
+            <h1>My Projects</h1>
+        </header>
+
+        <div class="projects-filter">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="laravel">Laravel</button>
+            <button class="filter-btn" data-filter="vue">Vue.js</button>
+            <button class="filter-btn" data-filter="api">API</button>
+        </div>
+
+        <div class="projects-grid">
+            <!-- Projects will be rendered here dynamically -->
+        </div>
+    </div>
+
+    <button class="theme-toggle" id="themeToggle">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/projects.js"></script>
+</body>
+</html> 

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M. Iqbal Ilham Rahayu - Personal Profile</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap">
+</head>
+<body>
+    <div class="sparkles-container">
+        <div class="sparkle-group"></div>
+    </div>
+
+    <!-- Main Card Container -->
+    <div class="card-container">
+        <!-- Profile Section -->
+        <section class="profile-section">
+            <div class="profile-bg">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+            <div class="profile-content">
+                <div class="profile-image">
+                    <img src="https://github.com/x-bal.png" alt="M. Iqbal">
+                </div>
+                <div class="profile-title">
+                    <h1>M. Iqbal Ilham Rahayu</h1>
+                </div>
+                <div class="title-wrapper">
+                    <p class="title">Web Developer</p>
+                </div>
+                <div class="profile-badges">
+                    <span class="badge">Fullstack</span>
+                    <span class="badge">Laravel</span>
+                    <span class="badge">Vue.js</span>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/x-bal" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/mxbal" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:mxbal026@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="https://devxbal.my.id" target="_blank"><i class="fas fa-globe"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navigation -->
+        <nav class="tab-nav">
+            <button class="tab-btn active" data-tab="about">About</button>
+            <button class="tab-btn" data-tab="skills">Skills</button>
+            <button class="tab-btn" data-tab="projects">Projects</button>
+        </nav>
+
+        <!-- Content Sections -->
+        <div class="content-section">
+            <!-- About Tab -->
+            <div class="tab-content active" id="about">
+                <h2>About Me</h2>
+                <p>Laravel Developer based in Bandung, Indonesia. Passionate about building web applications and solving complex problems.</p>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Bandung, Indonesia</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>mxbal026@gmail.com</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-globe"></i>
+                        <span>devxbal.my.id</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills Tab -->
+            <div class="tab-content" id="skills">
+                <h2>Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <i class="fab fa-laravel"></i>
+                        <span>Laravel</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-vuejs"></i>
+                        <span>Vue.js</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-node-js"></i>
+                        <span>Node.js</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-database"></i>
+                        <span>MySQL</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-database"></i>
+                        <span>PostgreSQL</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-docker"></i>
+                        <span>Docker</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projects Tab -->
+            <div class="tab-content" id="projects">
+                <h2>Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3>Axis Pro</h3>
+                        <p>Professional web application with modern technologies.</p>
+                        <div class="project-tags">
+                            <span>Laravel</span>
+                            <span>MySQL</span>
+                        </div>
+                        <a href="https://github.com/x-bal/axis-pro-new" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> View Project
+                        </a>
+                    </div>
+                    <div class="project-card">
+                        <h3>E-Ticket System</h3>
+                        <p>Electronic ticketing system with modern features.</p>
+                        <div class="project-tags">
+                            <span>Vue.js</span>
+                            <span>Laravel</span>
+                        </div>
+                        <a href="https://github.com/x-bal/e-ticket" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> View Project
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Tambahkan tombol View All Projects di bawah project cards -->
+                <div class="view-all-projects">
+                    <a href="projects.html" class="view-all-btn">
+                        View All Projects <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/script.js"></script>
+
+    <!-- Add this after body tag -->
+    <button class="theme-toggle" id="themeToggle">
+        <i class="fas fa-moon"></i>
+    </button>
+</body>
+</html> 
