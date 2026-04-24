@@ -1,0 +1,49 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-chelsea: #034694;
+  --color-surface: #ffffff;
+  --color-canvas: #f1f5f9;
+  --color-text-muted: #64748b;
+  --font-sans: 'Inter', sans-serif;
+  --font-heading: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-canvas);
+  color: #0f172a;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+}
+
+@layer components {
+  .bento-card {
+    /* 1. bg-surface tetap putih, tapi kita pertegas bordernya sedikit */
+    /* Base style (Light Mode) */
+    @apply bg-surface border border-slate-200/80 rounded-3xl p-6
+           shadow-[0_8px_30px_-6px_rgba(0,0,0,0.06)];
+
+    /* Dark Mode style */
+    @apply dark:bg-[#0B1120] dark:border-slate-800/80;
+
+    /* Smooth Transition untuk perpindahan tema */
+    @apply transition-all duration-500 ease-out;
+
+    /* Hover Effects (Support Dark Mode) */
+    @apply hover:border-chelsea/30 dark:hover:border-blue-500/30
+           hover:shadow-[0_25px_50px_-12px_rgba(3,70,148,0.15)]
+           dark:hover:shadow-[0_25px_50px_-12px_rgba(59,130,246,0.1)]
+           hover:-translate-y-1;
+  }
+}
